@@ -16,7 +16,9 @@ const forecast = (longitude,lattitude,callback)=>{
             callback(undefined,{
                 description:body.current.weather_descriptions[0],
                 Actual_tempreture:body.current.temperature,
-                feel_like_tempreture:body.current.feelslike
+                feel_like_tempreture:body.current.feelslike,
+                Humidity:body.current.humidity,
+                Wind_Speed:body.current.wind_speed
             })
         }
     })

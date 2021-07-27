@@ -73,7 +73,7 @@ app.get('/weather',(req,res)=>{
     
             res.send({
 
-                forecast:forcastData.description+'. It is Currently '+forcastData.Actual_tempreture+' degree out But it feels like '+forcastData.feel_like_tempreture+' degree',
+                forecast:forcastData.description+'. It is Currently '+forcastData.Actual_tempreture+' degree out But it feels like '+forcastData.feel_like_tempreture+' degree.Humidity is '+forcastData.Humidity+' and wind speed is '+forcastData.Wind_Speed,
                  location,
                  address:req.query.address
             })
