@@ -1,6 +1,3 @@
-console.log('my console javascript')
-
-
 
 const weatherForm = document.querySelector('form')
 
